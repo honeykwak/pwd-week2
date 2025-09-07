@@ -205,7 +205,7 @@ GitHub 저장소 페이지 새로고침하여 파일들이 업로드되었는지
 ## Step 5: SvelteKit 프로젝트 코드 작성
 
 ### 5.1 프로젝트 구조
-
+```
 src/
 ├─ app.css
 ├─ lib/
@@ -224,6 +224,7 @@ src/
       └─ [slug]/
          ├─ +page.server.js   # /projects/[slug] (server load)
          └─ +page.svelte      # /projects/[slug] (view)
+```
 
 ### 5.2 전역 스타일(CSS)
 ```css
