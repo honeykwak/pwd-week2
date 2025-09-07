@@ -371,7 +371,6 @@ export function load({ params }) {
   if (!item) throw error(404, 'Not found');
   return { item, slug: key };
 }
-}
 ```
 
 2. 페이지에서 표시 + $effect 로컬 동기화
