@@ -356,6 +356,7 @@ export async function load({ fetch }) {
 ### 5.8 동적 라우트 상세 + 이펙트 활용 학습
 1. 서버에서 상세 데이터 제공
 ```js
+// src/routes/projects/[slug]/+page.server.js
 import { error } from '@sveltejs/kit';
 
 const DB = {
@@ -369,6 +370,7 @@ export function load({ params }) {
   const item = DB[key];   // key가 없으면 undefined
   if (!item) throw error(404, 'Not found');
   return { item, slug: key };
+}
 }
 ```
 
