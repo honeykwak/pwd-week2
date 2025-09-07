@@ -352,7 +352,7 @@ export async function load({ fetch }) {
 {/each}
 ```
 
-### 5.8동적 라우트 상세 + 이펙트 활용 학습
+### 5.8 동적 라우트 상세 + 이펙트 활용 학습
 1. 서버에서 상세 데이터 제공
 ```js
 import { error } from '@sveltejs/kit';
@@ -411,7 +411,7 @@ git push origin main
 ```
 ---
 
-## 🚀 Step 7: Vercel 배포
+## Step 7: Vercel 배포
 
 ### 7.1 Vercel 계정 생성
 
