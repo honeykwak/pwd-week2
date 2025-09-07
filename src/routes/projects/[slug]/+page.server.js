@@ -1,3 +1,4 @@
+// src/routes/projects/[slug]/+page.server.js
 import { error } from '@sveltejs/kit';
 
 const DB = {
