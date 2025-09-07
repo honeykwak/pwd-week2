@@ -186,11 +186,11 @@ git commit -m "Initial commit: SvelteKit 프로젝트 생성"
 ### 4.2 GitHub 저장소 연결
 
 ```bash
-# 원격 저장소 추가 (복사한 URL 사용)
-git remote add origin https://github.com/[your-username]/pwd-week2.git
-
 # 브랜치 이름을 main으로 변경 (필요한 경우)
 git branch -M main
+
+# 원격 저장소 추가 (복사한 URL 사용)
+git remote add origin https://github.com/[your-username]/pwd-week2.git
 
 # GitHub에 푸시
 git push -u origin main
