@@ -1,11 +1,24 @@
+<!-- src/routes/+layout.svelte -->
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-
-	let { children } = $props();
+  // v5: <slot> 대신 children 스니펫을 받아 {@render children()}로 렌더
+  let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+  <title>AJOU Mini Portfolio</title>
+  <meta name="description" content="SvelteKit + Vercel mini portfolio" />
 </svelte:head>
 
-{@render children?.()}
+<nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/projects">Projects</a>
+</nav>
+
+<main>
+  {@render children()}
+</main>
+
+<style global>
+  @import '../app.css';
+</style>
