@@ -37,13 +37,7 @@ npm -v
 # 10.x.x 형태로 버전 출력되면 성공
 ```
 
-> ⚠️ **오류 해결**: 명령어를 찾을 수 없다고 나오는 경우
-   - Windows: 아래 명령 실행 후 시스템 재시작 후 다시 시도
-```bash
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-```   
-> - Mac/Linux: 터미널 재시작 후 다시 시도
----
+> ⚠️ **오류 해결**: 명령어를 찾을 수 없다고 나오는 경우 터미널 재시작 후 다시 시도
 
 ## Step 2: SvelteKit 프로젝트 생성
 
@@ -483,7 +477,9 @@ Vercel 대시보드에서 새 배포가 시작되는 것 확인
 - [ ] Vercel에 GitHub 저장소가 연결되어 자동 배포가 이루어 지고 있는가?
 - [ ] Vercel 배포한 웹서비스에서 제시한 프로젝트 코드가 모두 바르게 동작하는가? (Home, About, Projects)
 
-**참고** 추가적인 콘텐츠나 기능 확장은 자율적으로 진행하면 됩니다. 잘 구성된 실습 결과물은 강의 시간에 리뷰하도록 하겠습니다.
+**참고** 
+- 추가적인 콘텐츠나 기능 확장은 자율적으로 진행하면 됩니다.
+- 잘 확장된 결과물은 강의 시간에 함께 리뷰하도록 하겠습니다.
 ---
 
 ## 🔍 자주 발생하는 문제와 해결법
@@ -492,6 +488,10 @@ Vercel 대시보드에서 새 배포가 시작되는 것 확인
 
 **A:** Node.js가 제대로 설치되지 않았거나 PATH 설정 문제입니다.
 - Windows: Node.js 재설치 후 컴퓨터 재시작
+- Windows: PowerShell 재시작 후에도 명령어가 동작하지 않을 경우
+```bash
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
 - Mac/Linux: `source ~/.bashrc` 또는 `source ~/.zshrc` 실행
 
 ### Q2. GitHub 푸시 시 인증 오류가 발생합니다
