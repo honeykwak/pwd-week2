@@ -5,3 +5,26 @@ a { color: var(--brand); text-decoration: none; }
 nav { display:flex; gap:1rem; padding:1rem; border-bottom:1px solid #eee; }
 main { max-width: 880px; margin: 2rem auto; padding: 0 1rem; }
 .card { border:1px solid #eee; border-radius: 12px; padding:1rem; margin:.5rem 0; }
+
+/* Added for profile */
+.profile-section {
+  text-align: center;
+  padding: 1rem 0;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--brand);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
+}
