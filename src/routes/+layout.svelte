@@ -1,6 +1,5 @@
 <!-- src/routes/+layout.svelte -->
-<script>
-  // v5: <slot> 대신 children 스니펫을 받아 {@render children()}로 렌더
+<script>  
   let { children } = $props();
 </script>
 
